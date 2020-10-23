@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <section class="score-board">
+        <span id="user-score" class="user-score">0</span>:<span id="comp-score" class="comp-score">0</span>
+    </section>
+
+    <section class="result">
+        <p>User VS Computer. Who will win?</p>
+    </section>
+
+    <section class="choices">
+        <div class="choice" id="r">
+            <img src="images/rock.png" class="img" alt="rock">
+        </div>
+        <div class="choice" id="p">
+            <img src="images/paper.png" class="img" alt="paper">
+        </div>
+        <div class="choice" id="s">
+            <img src="images/scissors.png" class="img" alt="scissors">
+        </div>
+    </section>
+
+    <p id="action-message" class="action-message">Make your move</p>
+    <section class="buttons">
+        <div class="button" id="clear">Clear</div>
+        <div class="button" id="historyBtn">Show history</div>
+        <div class="button" id="imposible">Imposible mode: Off</div>
+        <div class="button" id="easy">Easy mode: Off</div>
+        <div class="button" id="withoutdraw">Without draw mode: Off</div>
+    </section>
+    <section class="history" id="history"></section>
+
+    <script src="index.js"></script>
+</body>
+</html>
