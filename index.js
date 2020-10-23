@@ -171,7 +171,7 @@ class Game {
                     this.historyOfMoves.splice(0)
                     // table
                     if (this.history_section.style.display === 'block') {
-                        this.history_section.innerHTML = '<table><thead><th>№</th><th>User</th><th>Computer</th><th>Result</th><th>Score</th></thead></table>'
+                        this.history_section.innerHTML = ''
                     } else {
                         this.history_section.innerHTML = ''
                     }
@@ -181,11 +181,13 @@ class Game {
                     isWithoutDraw = false
                     isEasy = false
 
+                    history_section.style.display = 'none'
+                    historyBtn_div.innerHTML = 'Show history'
                     imposible_div.innerHTML = 'Imposible mode: Off'
                     withoutdraw_div.innerHTML = 'Without draw mode: Off'
                     easy_div.innerHTML = 'Easy mode: Off'
 
-                    // historyBtn.classList.remove('activeBtn') ????
+                    historyBtn_div.classList.remove('activeBtn') 
                     easy_div.classList.remove('activeBtn')
                     withoutdraw_div.classList.remove('activeBtn')
                     imposible_div.classList.remove('activeBtn')
